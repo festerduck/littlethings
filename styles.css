@@ -53,7 +53,7 @@ hr {
     margin-left: 4rem;
     margin-bottom: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     color: #CCC5B9;
     font-size: 1rem;
 }
@@ -73,8 +73,15 @@ hr {
 #link{
     align-items: center;
     margin-top: 0.1rem;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 400;
+    color: #CCC5B9;
 }
 
 .text:hover {
     color: #CCC5B9;
+}
+#link:hover {
+    color: #252422;
 }
