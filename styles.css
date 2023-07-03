@@ -152,6 +152,7 @@ hr {
 #result {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    text-transform: uppercase;  
     font-size: 7rem;
     margin-top: 0px;
     margin-bottom: 1rem;
