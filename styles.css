@@ -2,12 +2,19 @@ body {
     margin: 0;
     padding: 0;
     background-color: #EB5E28;
+    color: #252422;
 }
 /* font-family: 'EB Garamond', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Plus Jakarta Sans', sans-serif; */
 h6 {
     font-weight: 300;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    line-height: 2rem;
 }
 
 .header {
@@ -83,5 +90,88 @@ hr {
     color: #CCC5B9;
 }
 #link:hover {
+    color: #252422;
+}
+.leap-head {
+    margin-bottom: 0;
+}
+.container-leap {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+#p-leap{
+    text-align: center;
+    width: 50%;
+    line-height: 2rem;
+}
+.text-leap {
+    margin-left: 4rem;
+}
+#input-year {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-left: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+#input-box {
+    height: 3rem;
+    width: 20rem;
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border: 3px solid #252422;
+    background-color: transparent;
+}
+#check-btn {
+    height: 3rem;
+    width: 10rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #252422;
+    color: #CCC5B9;
+}
+#check-btn:hover{
+    background-color: #CCC5B9;
+    color: #252422;
+}
+#last-hr{
+    margin-bottom: 1rem;
+}
+.result-text {
+    height: 9rem;
+}
+#result {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 7rem;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+.leap-footer {
+    margin-top: 2rem;
+}
+.leap-line{
+    margin-bottom: 0;
+    height: 1rem;
+    /* background-color: aqua; */
+}
+#link-footer {
+    align-items: center;
+    margin-top: 0rem;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 400;
+    color: #CCC5B9;
+}
+#link-footer:hover {
     color: #252422;
 }
