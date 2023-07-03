@@ -41,7 +41,7 @@ function getVal()
     {
         resultElement.innerHTML = "Please Enter a Value!";
     }
-    if (input.value === "0" || input.value < 0) {
+    else if (input.value === "0" || input.value < 0) {
         resultElement.innerHTML = "Invalid Value!";
     }
     else 
