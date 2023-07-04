@@ -53,7 +53,56 @@ function getVal()
     event.preventDefault();
     return 0;
 }
+var num;
+function rollDice(){
+  var  num = Math.random();
+    num = num * 6;
+    num = num + 1;
+    num = Math.floor(num);
+    return num;
+}
+// num = rollDice();
 
-
-
+var rollText = document.getElementById("roll");
+var tempId = "d6";
+function showDice()
+{
+    num = rollDice();
+    if(num === 1)
+    {
+        document.getElementById("d1").classList.add("show-dice");
+        tempId = "d1";
+    }
+    else if(num === 2)
+    {
+        document.getElementById("d2").classList.add("show-dice");
+        tempId = "d2";
+    }
+    else if (num ===3) {
+        document.getElementById("d3").classList.add("show-dice");
+        tempId = "d3";
+    }
+    else if (num === 4) {
+        document.getElementById("d4").classList.add("show-dice");
+        tempId = "d4";
+    }
+    else if (num === 5) {
+        document.getElementById("d5").classList.add("show-dice");
+        tempId = "d5";
+    }
+    else if (num === 6) {
+        document.getElementById("d6").classList.add("show-dice");  
+        tempId = "d6";      
+    }
+}
+function hideDice()
+{
+    document.getElementById(tempId).classList.remove("show-dice");
+}
+function changeVisibility()
+{
+    // rollText.classList.add("visibility");
+    hideDice();
+    showDice();
+}
 
