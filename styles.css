@@ -350,7 +350,7 @@ hr {
         /* background-color: aqua; */
     }
     .header {
-        margin-top: -10px;
+        margin-top: 50px;
     }
     .header h2{
         font-size: 2rem;
@@ -359,7 +359,7 @@ hr {
         font-size: 1.3rem;
         font-weight: 500;
         text-align: center;
-        width: 70%;
+        width: 80%;
         line-height: 2rem; 
         margin: 0px;
  }
@@ -381,14 +381,56 @@ hr {
     margin-bottom: 0px;
  }
  .container hr{
-    margin-top: 30px;
+    margin-top: 50px;
  }
  .container a{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-left: 0.5rem;
  }
  .footer{
-    margin-left: 2rem;
-    margin-top: 90px;
+    margin-left: 0rem;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    background-color: #252422;
+    color: #CCC5B9;
+    height: 20vh;
  }
+ .line-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    margin-top: 10px;
+    color: #CCC5B9;
+ }
+ .top {
+    text-transform: uppercase;
+ }
+ .line-up a{
+    text-align: center;
+    justify-content: center;
+    margin-left: 0px;
+    display: flex;
+}
+ #link{
+    text-align: center;
+    font-size: 0.8rem;
+    color: #CCC5B9;
+
+ }
+.bottom-text {
+    margin-top: 40px;
+}
+.bottom-text h6{
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    
+}
 }
