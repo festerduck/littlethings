@@ -40,15 +40,19 @@ function getVal()
     if(input.value === "")
     {
         resultElement.innerHTML = "Please Enter a Value!";
+        resultElement.style.color = '#EB5E28';
     }
     else if (input.value === "0" || input.value < 0) {
         resultElement.innerHTML = "Invalid Value!";
+        resultElement.style.color = '#EB5E28';
     }
     else 
     {
         year = input.value;
         var leap = isLeapYear(year);
         resultElement.innerHTML = leap;
+        resultElement.style.color = '#252422';
+
     }
     event.preventDefault();
     return 0;

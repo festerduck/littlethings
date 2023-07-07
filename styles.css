@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -12,9 +13,8 @@ h6 {
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    line-height: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
 }
 
 .header {
@@ -31,8 +31,8 @@ h3 {
     margin-bottom: 10px;
 }
 p {
-    font-weight: 400;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 hr {
     border: none;
@@ -48,6 +48,7 @@ hr {
 .text {
     font-family: 'Montserrat', sans-serif;
     color: #252422;
+    font-weight: 800;
     text-transform: uppercase;
     font-size: 4rem;
     margin-top: 0;
@@ -59,10 +60,7 @@ hr {
     margin-top: 8rem;
     margin-left: 4rem;
     margin-bottom: 0;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 300;
-    color: #CCC5B9;
-    font-size: 1rem;
+   
 }
 .line-up {
     display: flex;
@@ -70,9 +68,26 @@ hr {
     padding: 0;
     height: 2rem;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #252422;
+    font-size: 1rem;
+}
+.top{
+    margin-top: 70px;
+    font-weight: 400;
+}
+
+.bottom-text {
+    margin-top: -10px;
+}
+.bottom-text h6{
+    font-weight: 500;
+
 }
 #footer-logo {
-    margin-right: 4rem;
+    font-weight: 500;
+
 }
 .bold {
     font-weight: 800;
@@ -80,20 +95,39 @@ hr {
 #link{
     align-items: center;
     margin-top: 0.1rem;
+    margin-right: 4rem;
     text-decoration: none;
     font-size: 11px;
-    font-weight: 400;
-    color: #CCC5B9;
+    font-weight: 500;
+    color: #252422;
 }
 
 .text:hover {
     color: #CCC5B9;
 }
 #link:hover {
+    color: #CCC5B9;
+}
+.leap-year-body {
+    background-color: #CCC5B9;
+    color: #252422;
+}
+.leap-year-body h2,.leap-year-body p{
     color: #252422;
 }
 .leap-head {
     margin-bottom: 0;
+}
+#rules{
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.rules-head {
+    font-weight: 600;
+}
+.rules-body {
+    margin-left: 20px;
+    
 }
 .container-leap {
     margin-top: 0;
@@ -106,17 +140,24 @@ hr {
     margin: 0;
 }
 #p-leap{
+    font-weight: 500;
     text-align: center;
     width: 50%;
     line-height: 2rem;
 }
 .text-leap {
     margin-left: 4rem;
+    text-transform: lowercase;
 }
+.text-leap h3{
+    font-weight: 400;
+}
+
 #input-year {
     display: flex;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
+    font-weight: 500;
     margin-left: 4rem;
     align-items: center;
     justify-content: center;
@@ -128,7 +169,8 @@ hr {
     margin-left: 3rem;
     margin-right: 3rem;
     border: 3px solid #252422;
-    background-color: transparent;
+    border-radius: 28px;
+    background-color: rgba(255, 252, 242, 0.5);
 }
 #check-btn {
     height: 3rem;
@@ -136,11 +178,12 @@ hr {
     font-weight: 800;
     font-size: 1.5rem;
     border: none;
+    border-radius: 28px;
     background-color: #252422;
     color: #CCC5B9;
 }
 #check-btn:hover{
-    background-color: #CCC5B9;
+    background-color: #FFFCF2;
     color: #252422;
 }
 #last-hr{
@@ -153,8 +196,8 @@ hr {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     text-transform: uppercase;  
-    font-size: 7rem;
-    margin-top: 0px;
+    font-size: 5rem;
+    margin-top: 30px;
     margin-bottom: 1rem;
 }
 .leap-footer {
@@ -237,4 +280,115 @@ hr {
 }
 .dice-main {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 950px) {
+    body {
+      /* background-color: aqua; */
+    }
+    .header h2{
+        font-size: 3rem;
+    }
+    .header p{
+        font-size: 1.7rem;
+        color: #FFFCF2;
+        font-weight: 500;
+    }
+    .top-links-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        width: 90%;
+    }
+    .container a{
+        font-weight: 700;
+        font-size: 4rem;
+        margin-left: 2rem;
+    }
+    .footer{
+        margin-top: -20px;
+    }
+    .top{
+        /* font-weight: ; */
+    }
+  }
+ @media screen and (max-width: 775px) {
+    body{
+        /* background-color: aqua; */
+    }
+    .header {
+        margin-top: 60px;
+    }
+    .header h2{
+        font-size: 3rem;
+        
+    }
+    .top-links-container{
+        margin-top: -30px;
+        margin-bottom: 50px;
+    }
+    .container{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .container a{
+        font-size: 3rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+   .container hr{
+    margin-top: 60px;
+   }
+    .footer {
+        margin-top: -50px;
+    }
+ }
+ @media screen and (max-width: 580px) {
+    body{
+        /* background-color: aqua; */
+    }
+    .header {
+        margin-top: -10px;
+    }
+    .header h2{
+        font-size: 2rem;
+    }
+    .header p{
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-align: center;
+        width: 70%;
+        line-height: 2rem; 
+        margin: 0px;
+ }
+ .para-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    margin-bottom: 100px;
+ }
+ .top-links-container{
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0px;
+ }
+ .container{
+    margin-bottom: 0px;
+ }
+ .container hr{
+    margin-top: 30px;
+ }
+ .container a{
+    font-size: 2rem;
+    margin-left: 0.5rem;
+ }
+ .footer{
+    margin-left: 2rem;
+    margin-top: 90px;
+ }
 }
