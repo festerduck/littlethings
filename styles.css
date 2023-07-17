@@ -366,10 +366,10 @@ hr {
     font-weight: 700;
   }
   #input-box {
-    width: 350px;
+    width: 300px;
   }
   .result-text {
-    height: 25vh;
+    height: 30vh;
   }
   .result-text #result {
     font-size: 48px;
