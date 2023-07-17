@@ -71,31 +71,38 @@ var rollText = document.getElementById("roll");
 var tempId = "d6";
 function showDice()
 {
+    var changeBackgroundColor = document.querySelector("body");
     num = rollDice();
     if(num === 1)
     {
         document.getElementById("d1").classList.add("show-dice");
+        changeBackgroundColor.style.backgroundColor = '#355070';
         tempId = "d1";
     }
     else if(num === 2)
     {
         document.getElementById("d2").classList.add("show-dice");
+        changeBackgroundColor.style.backgroundColor = '#6d597a';
         tempId = "d2";
     }
     else if (num ===3) {
         document.getElementById("d3").classList.add("show-dice");
+        changeBackgroundColor.style.backgroundColor = '#b56576';
         tempId = "d3";
     }
     else if (num === 4) {
         document.getElementById("d4").classList.add("show-dice");
+        changeBackgroundColor.style.backgroundColor = '#e56b6f';
         tempId = "d4";
     }
     else if (num === 5) {
         document.getElementById("d5").classList.add("show-dice");
+        changeBackgroundColor.style.backgroundColor = '#eaac8b';
         tempId = "d5";
     }
     else if (num === 6) {
         document.getElementById("d6").classList.add("show-dice");  
+        changeBackgroundColor.style.backgroundColor = '#006d77';
         tempId = "d6";      
     }
 }

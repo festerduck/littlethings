@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="icons8-dice-32.png" type="image/x-icon">
     <title>Roll The Dice</title>
 </head>
-<body>
+<body class="dice-body">
     <div class="header leap-head">
         <h2 id="logo">roll the dice</h2>
         <div class="para">
@@ -32,13 +32,15 @@
             <button id="roll" onclick="changeVisibility()">Roll</button>
         </div>
     </div>
-        <div class="footer dice-footer">
-            <div class="line-up">
-                <h6 id="footer-logo">the <span class="bold">Contrivers</span> 2023</h6>
-                <h6>all rights reserved</h6>
-            </div>
-            <a class="link-dice" href="https://www.behance.net/rehmaans/" id="link-dice">behance.net<span class="bold">/rehmaans</span></a>
+    <div class="footer" id="dice-footer">
+        <div class="line-up top">
+            <h6 id="footer-logo">the <span class="bold">Contrivers</span> 2023</h6>
         </div>
+        <div class="line-up bottom-text">
+            <a href="https://www.behance.net/rehmaans/" id="link">behance.net<span class="bold">/rehmaans</span></a>
+            <h6>all rights reserved</h6>
+        </div>
+    </div>
         <script src="index.js"></script>
 </body>
 </html>
