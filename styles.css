@@ -5,7 +5,7 @@ body {
   color: #252422;
 }
 .dice-body {
-  background-color: #fcf6bd;
+  background-color: #fffcf2;
 }
 /* font-family: 'EB Garamond', serif;
 font-family: 'Montserrat', sans-serif;
@@ -20,6 +20,7 @@ h3 {
 }
 
 .header {
+  position: relative;
   font-family: "EB Garamond", serif;
   font-weight: 800;
   font-style: italic;
@@ -28,6 +29,38 @@ h3 {
   font-size: 2rem;
   color: #fffcf2;
   margin: 1rem auto 5rem auto;
+}
+.header a {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  left: 40px;
+  border: 1px solid #252422;
+  opacity: 0.5;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.header a span {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 3px;
+  padding-right: 2px;
+  color: #252422;
+
+  /* opacity: 0.5; */
+}
+.header a:hover {
+  background-color: #ccc5b9;
+  color: #fffcf2;
+  opacity: 1;
+  animation: scaleAnimation 0.3s ease-in-out;
+}
+.header a span:hover {
+  color: #fffcf2;
+  animation: scaleAnimation 0.3s ease-in-out;
 }
 #logo {
   margin-bottom: 10px;
@@ -220,6 +253,9 @@ hr {
 #link-footer:hover {
   color: #252422;
 }
+.dice-head {
+  color: #252422;
+}
 .roll-dice {
   display: flex;
   margin-top: 200px;
@@ -284,6 +320,62 @@ hr {
 }
 #dice-footer {
   margin-top: 5.5rem;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  height: 50vh;
+}
+.theDice {
+  height: 30vh;
+  width: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.theDice img {
+  width: 400px;
+}
+.rollButton {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rollButton button {
+  width: 200px;
+  height: 100px;
+  border: none;
+  border-radius: 13px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 40px;
+  background-color: #252422;
+  color: #fffcf2;
+}
+/* .rollButton button:hover {
+  background-color: #fffcf2;
+  color: #252422;
+  border: 1px solid #252422;
+} */
+.button-animation {
+  animation: scaleAnimation 0.3s ease-in-out;
+}
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -384,6 +476,23 @@ hr {
   }
   .footer {
     margin-top: -50px;
+  }
+  .dice-head #p-leap {
+    color: #252422;
+    font-size: 20px;
+    font-style: normal;
+  }
+  .dice-container {
+    left: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dice-img {
+    left: 20%;
+    height: 200px;
   }
 }
 @media screen and (max-width: 580px) {

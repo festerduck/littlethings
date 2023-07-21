@@ -22,40 +22,41 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <title>JavaScript</title>
-    <link rel="shortcut icon" href="icons8-dice-32.png" type="image/x-icon" />
+    <title>The Dice</title>
   </head>
-  <body>
-    <div class="header">
-      <h2 id="logo">Little Things</h2>
-      <div class="para-main">
-        <p id="tagline">
-          a personal project designed for performing tiny fun tasks
-        </p>
-      </div>
-    </div>
-    <div class="top-links-container">
-      <div class="container">
-        <hr />
-        <a href="isLeapYear.html" class="text">Leap Year Finder</a>
-        <hr />
-        <a href="theDice.html" class="text">Roll the Dice</a>
-        <hr />
-        <a href="#" class="text">BMI Calculator</a>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="line-up top">
-        <h6 id="footer-logo">the <span class="bold">Contrivers</span> 2023</h6>
-      </div>
-      <div class="line-up bottom-text">
-        <a href="https://www.behance.net/rehmaans/" id="link"
-          >behance.net<span class="bold">/rehmaans</span></a
+  <body style="background-color: #fffcf2">
+    <main>
+      <div class="header dice-head">
+        <a href="index.html"
+          ><span class="material-icons-outlined"> arrow_back_ios </span></a
         >
-        <h6>all rights reserved</h6>
+        <h2 id="logo">roll the dice</h2>
+        <div class="para">
+          <p id="p-leap">it's as simple as it is</p>
+        </div>
       </div>
-    </div>
+      <div class="wrapper">
+        <div class="theDice">
+          <img src="diceSvgs/Group 4.svg" alt="Dice Image" />
+        </div>
+        <div class="rollButton">
+          <button onclick="changeDice()">Roll</button>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="line-up top">
+          <h6 id="footer-logo">
+            the <span class="bold">Contrivers</span> 2023
+          </h6>
+        </div>
+        <div class="line-up bottom-text">
+          <a href="https://www.behance.net/rehmaans/" id="link"
+            >behance.net<span class="bold">/rehmaans</span></a
+          >
+          <h6>all rights reserved</h6>
+        </div>
+      </div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>

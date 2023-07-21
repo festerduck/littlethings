@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="icons8-dice-32.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="icons8-dice-32.png" type="image/x-icon" />
     <title>Leap Year Finder</title>
-</head>
-<body class="leap-year-body">
+  </head>
+  <body class="leap-year-body">
     <div class="header leap-head">
-        <h2 id="logo">leap year finder</h2>
-        <div class="para">
-            <p id="p-leap">A leap year is a year that contains an additional day, 
-                February 29th, making it 366 days instead of the usual 365 days. 
-                Leap years are necessary to keep our calendar in alignment 
-                with the Earth's revolutions around the sun.</p>
-        </div>
-         
+      <a href="index.html"
+        ><span class="material-icons-outlined"> arrow_back_ios </span></a
+      >
+      <h2 id="logo">leap year finder</h2>
+      <div class="para">
+        <p id="p-leap">
+          A leap year is a year that contains an additional day, February 29th,
+          making it 366 days instead of the usual 365 days. Leap years are
+          necessary to keep our calendar in alignment with the Earth's
+          revolutions around the sun.
+        </p>
+      </div>
     </div>
     <div class="container-leap">
-        <hr>
-        <h3 class="text-leap" id="rules"><span class="rules-head">the general rule for determining a leap year is as follows:<br></span>
-          <div class="rules-body">
-            1- a year that is divisible by 4 is a leap year, except for...
-            <br>
-            2- years that are divisible by 100 are not leap years, except for...
-            <br>
-            3- years that are divisible by 400 are leap years.
-          </div> 
-           
-        </h3>
-        <hr>
-       <form id="input-year" action="isLeapYear.html">
-        <label id="input-label" >Enter Year</label>
-        <input id="input-box" type="text">
-        <button  id="check-btn" onclick="getVal()">CHECK</button>
-       </form>
-       <hr id="last-hr">
-       <div class="result-text">
-            <h1 id="result"></h1>
-       </div>
-       
+      <hr />
+      <h3 class="text-leap" id="rules">
+        <span class="rules-head"
+          >the general rule for determining a leap year is as follows:<br
+        /></span>
+        <div class="rules-body">
+          1- a year that is divisible by 4 is a leap year, except for...
+          <br />
+          2- years that are divisible by 100 are not leap years, except for...
+          <br />
+          3- years that are divisible by 400 are leap years.
+        </div>
+      </h3>
+      <hr />
+      <form id="input-year" action="isLeapYear.html">
+        <label id="input-label">Enter Year</label>
+        <input id="input-box" type="text" />
+        <button id="check-btn" onclick="getVal()">CHECK</button>
+      </form>
+      <hr id="last-hr" />
+      <div class="result-text">
+        <h1 id="result"></h1>
+      </div>
     </div>
     <div class="footer" id="leap-foot">
-        <div class="line-up top">
-            <h6 id="footer-logo">the <span class="bold">Contrivers</span> 2023</h6>
-        </div>
-        <div class="line-up bottom-text">
-            <a href="https://www.behance.net/rehmaans/" id="link">behance.net<span class="bold">/rehmaans</span></a>
-            <h6>all rights reserved</h6>
-        </div>
+      <div class="line-up top">
+        <h6 id="footer-logo">the <span class="bold">Contrivers</span> 2023</h6>
+      </div>
+      <div class="line-up bottom-text">
+        <a href="https://www.behance.net/rehmaans/" id="link"
+          >behance.net<span class="bold">/rehmaans</span></a
+        >
+        <h6>all rights reserved</h6>
+      </div>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
