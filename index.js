@@ -23,6 +23,7 @@ function isLeapYear(year) {
   }
 }
 function getVal() {
+  // animateButtonClick();
   var input = document.getElementById("input-box");
   var resultElement = document.getElementById("result");
   if (input.value === "") {
@@ -113,14 +114,33 @@ function animateButtonClick() {
   const button = document.querySelector(".animated");
   //   button.classList.add("button-animation");
   image.classList.add("button-animation");
-
   // After the animation duration, remove the animation class
   setTimeout(() => {
     // button.classList.remove("button-animation");
     image.classList.remove("button-animation");
-  }, 300);
+  }, 1000);
+}
+function animateButtonClickRoll() {
+  const button = document.querySelector(".roll");
+  button.classList.add("button-animation-roll");
+  // image.classList.add("button-animation");
+  // After the animation duration, remove the animation class
+  setTimeout(() => {
+    button.classList.remove("button-animation-roll");
+    // image.classList.remove("button-animation");
+  }, 200);
+}
+
+function animateRotatek() {
+  image.src = "dice-solid.svg";
+  image.classList.add("dice-animation");
+  setTimeout(() => {
+    image.classList.remove("dice-animation");
+    theDice();
+  }, 400);
 }
 function changeDice() {
+  animateRotatek();
+  animateButtonClickRoll();
   animateButtonClick();
-  theDice();
 }

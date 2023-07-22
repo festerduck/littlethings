@@ -3,6 +3,29 @@ body {
   padding: 0;
   background-color: #eb5e28;
   color: #252422;
+  min-height: 100vh;
+  overflow: hidden;
+  /* opacity: 0; Initial opacity to hide the page during navigation */
+  animation: fade 0.5s ease-in;
+}
+
+@keyframes fade {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  50% {
+    filter: blur(5px);
+    opacity: 0.5;
+  }
+  100% {
+    filter: blur(0px);
+
+    opacity: 1;
+  }
+}
+.indexMain {
+  height: 80vh;
 }
 .dice-body {
   background-color: #fffcf2;
@@ -29,6 +52,7 @@ h3 {
   font-size: 2rem;
   color: #fffcf2;
   margin: 1rem auto 5rem auto;
+  pointer-events: none;
 }
 .header a {
   position: absolute;
@@ -41,6 +65,7 @@ h3 {
   border-radius: 50%;
   height: 30px;
   width: 30px;
+  pointer-events: all;
 }
 .header a span {
   justify-content: center;
@@ -148,11 +173,14 @@ hr {
   color: #252422;
 }
 .leap-head {
+  height: 20vh;
   margin-bottom: 0;
 }
 #rules {
+  /* height: 10vh; */
   font-weight: 500;
   letter-spacing: 1px;
+  padding: 20px;
 }
 .rules-head {
   font-weight: 600;
@@ -161,8 +189,13 @@ hr {
   margin-left: 20px;
 }
 .container-leap {
-  margin-top: 0;
-  margin-bottom: 0;
+  height: 50vh;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.container-leap hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .para {
   display: flex;
@@ -192,6 +225,7 @@ hr {
   margin-left: 4rem;
   align-items: center;
   justify-content: center;
+  padding: 30px;
 }
 #input-box {
   height: 3rem;
@@ -364,17 +398,110 @@ hr {
   border: 1px solid #252422;
 } */
 .button-animation {
-  animation: scaleAnimation 0.3s ease-in-out;
+  animation: scaleAnimation 0.5s ease-in-out;
+}
+.button-animation-roll {
+  animation: rollAnimation 0.2s ease-in-out;
+}
+.dice-animation {
+  filter: blur(30px);
+  /* mix-blend-mode: overlay; */
+  animation: rotateAnimation 0.5s linear infinite;
+}
+.theFooter {
+  background-color: #252422;
+  height: 20vh;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  color: #fffcf2;
+  gap: 0px;
+}
+.footContainer {
+  margin-top: 0px;
+  transform: translateY(-20px);
+}
+.theFooter .footerLogo {
+  /* transform: translateY(-5px); */
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 12px;
+}
+.theFooter .tagline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 11px;
+  color: #fffcf2;
+  transform: translateY(-15px);
+}
+.footerLogo h1 {
+  font-weight: 300;
+}
+.footerLogo span {
+  font-weight: 800;
+}
+.tagline h3 {
+  font-weight: 300;
+}
+.tagline a {
+  text-decoration: none;
+  color: #fffcf2;
+}
+
+.theDiceMain {
+  height: 80vh;
+}
+
+@keyframes rollAnimation {
+  0% {
+    transform: scale(1);
+    /* opacity: 0; */
+  }
+  50% {
+    transform: scale(1.09);
+    /* opacity: 0.5; */
+  }
+  100% {
+    transform: scale(1);
+    /* opacity: 1; */
+  }
 }
 @keyframes scaleAnimation {
   0% {
     transform: scale(1);
+    opacity: 0;
   }
   50% {
     transform: scale(1.1);
+    /* opacity: 0.5; */
   }
   100% {
     transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  75% {
+    /* opacity: 1; */
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
   }
 }
 
@@ -411,11 +538,17 @@ hr {
   }
 }
 @media screen and (max-width: 775px) {
-  body {
+  .indexBody {
     /* background-color: aqua; */
+    min-height: 100vh;
+  }
+  .indexMain {
+    max-height: 90vh;
+    margin: 0px;
   }
   .header {
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    height: 10vh;
   }
   .header h2 {
     font-size: 3rem;
@@ -434,12 +567,25 @@ hr {
     width: 70%;
   }
   .top-links-container {
-    margin-top: -30px;
-    margin-bottom: 50px;
+    height: 50vh;
+    /* margin-top: -30px; */
+    /* margin-bottom: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .container {
-    margin-top: 20px;
-    margin-bottom: 50px;
+    /* margin-top: 20px; */
+
+    /* margin-bottom: 50px; */
+  }
+  .indexFoot {
+    min-height: 20vh;
+  }
+  .indexFoot .footContainer {
+    /* transform: translateY(-50px); */
+    /* background-color: aqua; */
   }
   .container-leap {
     padding: 16px;
@@ -494,28 +640,52 @@ hr {
     left: 20%;
     height: 200px;
   }
+  .theFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .footContainer {
+    padding-top: 20px;
+    width: 90%;
+  }
+  .theFooter .footerLogo {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  .theFooter .tagline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 9px;
+  }
 }
 @media screen and (max-width: 580px) {
   body {
     /* background-color: aqua; */
   }
   .header {
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
   .header h2 {
     font-size: 2rem;
+    color: #fffcf2;
   }
   .header p {
     font-size: 1rem;
-
+    font-family: "EB Garamond", sans-serif;
     font-weight: 500;
     text-align: center;
-    width: 80%;
+    width: 70%;
     line-height: 2rem;
     margin: 0px;
   }
   #tagline {
-    font-style: normal;
+    font-style: italic;
   }
   .para-main {
     display: flex;
@@ -525,26 +695,53 @@ hr {
     margin-bottom: 100px;
   }
   .top-links-container {
-    margin-top: -100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 0px;
   }
   .container {
     margin-bottom: 0px;
+    width: 100%;
   }
   .container hr {
     margin-top: 10px;
     margin-bottom: 0px;
   }
   .container a {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-left: 0rem;
     text-align: center;
     display: block;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  .theDiceMain {
+    height: 80vh;
+  }
+  .wrapper {
+    height: 60vh;
+  }
+
+  .theFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footContainer {
+    /* width: 100%; */
+    padding-top: 30px;
+  }
+  .theFooter .footerLogo {
+    font-size: 9px;
+    margin-left: 5px;
+    padding-bottom: 10px;
+  }
+  .theFooter .tagline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 9px;
   }
   .footer {
     margin-left: 0rem;
